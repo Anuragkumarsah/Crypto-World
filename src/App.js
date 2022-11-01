@@ -17,7 +17,7 @@ function App() {
   const classes = useStyles();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className={classes.App}>
         <Header />
         <Route path="/" component={Homepage} exact />
